@@ -113,8 +113,6 @@ export const productlist:Iproduct[]=[
 
 
 ]
-
-
 export const forminputlist:Iforminput[]=[
     {
     id:"title",

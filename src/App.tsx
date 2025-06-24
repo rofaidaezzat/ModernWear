@@ -9,7 +9,7 @@ import { Iproduct } from "./interfaces/index.ts";
 import ErrorMsg from "./component/ErrorMsg.tsx";
 import CircleColor from "./component/CircleColor.tsx";
 import { v4 as uuid } from "uuid";
-import { productname } from "./Type/index.ts";
+
 //import SelectMenu from "./component/ui/SelectMenu.tsx";
 //import SelectMenu from "./component/ui/SelectMenu.tsx";
 
@@ -163,7 +163,7 @@ function App() {
   ));
   const renderProductEditWithErrorMsg = (
     id: string,
-    name: productname,
+    name: "title" | "description" | "imageURL" | "price",
     label: string
   ) => {
     return (
