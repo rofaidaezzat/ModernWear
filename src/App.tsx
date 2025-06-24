@@ -6,7 +6,6 @@ import Button from "./component/ui/Button";
 import { productlist, forminputlist, colors } from "./data/index.ts";
 import Input from "./component/ui/Input.tsx";
 import { Iproduct } from "./interfaces/index.ts";
-import { productvalidation } from "./validation/index.ts";
 import ErrorMsg from "./component/ErrorMsg.tsx";
 import CircleColor from "./component/CircleColor.tsx";
 import { v4 as uuid } from "uuid";
@@ -80,20 +79,7 @@ function App() {
   };
   const submitHandler = (e: FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
-    const errors = productvalidation({
-      title: product.title,
-      description: product.description,
-      price: product.price,
-      imageURL: product.imageURL,
-    });
-    // const hasErrorMessage =
-    //   Object.values(errors).some((value) => value === "") &&
-    //   Object.values(errors).every((value) => value === "");
 
-    // if (!hasErrorMessage) {
-    //   seterrors(errors);
-    //   return;
-    // }
     setproducts((prev) => [
       {
         ...product,
@@ -109,21 +95,7 @@ function App() {
   };
   const submitEditHandler = (e: FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
-    const { title, description, price, imageURL } = producttoedit;
-    const errors = productvalidation({
-      title,
-      description,
-      price,
-      imageURL,
-    });
-    // const hasErrorMessage =
-    //   Object.values(errors).some((value) => value === "") &&
-    //   Object.values(errors).every((value) => value === "");
 
-    // if (!hasErrorMessage) {
-    //   seterrors(errors);
-    //   return;
-    // }
     const updateproduct = [...products];
     updateproduct[producttoeditidx] = {
       ...producttoedit,
