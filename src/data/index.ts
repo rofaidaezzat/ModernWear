@@ -1,17 +1,22 @@
 import { Icategory, Iforminput, Iproduct } from "../interfaces";
 import { v4 as uuid} from 'uuid';
+import image1 from "../assets/images/image.png";
+import image2 from "../assets/images/black_e4d19185-c19d-4e7c-a14a-8d2a29c7bad3.webp";
+import image3 from "../assets/images/Orange.jpg";
+import image4 from "../assets/images/white-t-shirt-front-mockup_23-292935585.avif";
+import image5 from "../assets/images/download.jpg";
 
 export const productlist:Iproduct[]=[
     {
         id:uuid(),
         title :"2022 Geneis GV70",
         description :"A luxury brand go A  ",
-        imageURL:"src/assets/images/image.png",
+        imageURL: image1,
         price:"500000",
         colors:["#ff0032" ,"#2563eb","#ff6E31"],
         category:{
             name:"cars",
-            imageURL:"src/assets/images/image.png",
+            imageURL: image1,
         },
 
 
@@ -20,12 +25,12 @@ export const productlist:Iproduct[]=[
         id:uuid(),
         title :"chevrolet spark .995cc",
         description :"A luxury brand go ",
-        imageURL:"src/assets/images/black_e4d19185-c19d-4e7c-a14a-8d2a29c7bad3.webp",
+        imageURL: image2,
         price:"100000",
         colors:["#ff0032" ,"#2563eb","#ff6E31"],
         category:{
             name:"cars",
-            imageURL:"src/assets/images/black_e4d19185-c19d-4e7c-a14a-8d2a29c7bad3.webp",
+            imageURL: image2,
         },
 
 
@@ -34,12 +39,12 @@ export const productlist:Iproduct[]=[
         id:uuid(),
         title :"chevrolet spark .995cc",
         description :"A luxury brand go ",
-        imageURL:"src/assets/images/Orange.jpg",
+        imageURL: image3,
         price:"400000",
         colors:["#ff0032" ,"#2563eb","#ff6E31"],
         category:{
             name:"cars",
-            imageURL:"src/assets/images/Orange.jpg",
+            imageURL: image3,
         },
 
 
@@ -48,12 +53,12 @@ export const productlist:Iproduct[]=[
         id:uuid(),
         title :"chevrolet spark .995cc",
         description :"A luxury brand go ",
-        imageURL:"src/assets/images/white-t-shirt-front-mockup_23-292935585.avif",
+        imageURL: image4,
         price:"300000",
         colors:["#ff0032" ,"#2563eb","#ff6E31"],
         category:{
             name:"cars",
-            imageURL:"src/assets/images/white-t-shirt-front-mockup_23-292935585.avif",
+            imageURL: image4,
         },
     },
     {
@@ -165,16 +170,16 @@ export const categories:Icategory[]=[
     {
         id:uuid(),
         name:"rofaida",
-        imageURL:"src/assets/images/download.jpg"
+        imageURL: image5,
     },
     {
         id:uuid(),
         name:"rofy",
-        imageURL:"src/assets/images/download.jpg"
+        imageURL: image5,
     },{
         id:uuid(),
         name:"roro",
-        imageURL:"src/assets/images/download.jpg"
+        imageURL: image5,
     },
     
 ]
